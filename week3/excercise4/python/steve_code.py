@@ -3,6 +3,9 @@ import boto3
 from boto3.dynamodb.conditions import Key, Attr
 from pprint import pprint
 
+# Python port of Steve Code sample written in JavaScript.
+# The error in the original version is fixed.
+
 dynamodb = boto3.resource("dynamodb")
 table = dynamodb.Table("dragon_stats")
 
